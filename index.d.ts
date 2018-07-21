@@ -32,3 +32,7 @@ declare class Navigator {
     popToRoute: (route: object) => void;
     popToTop: () => void;
 }
+
+export default {
+    Navigator
+}
