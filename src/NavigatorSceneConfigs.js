@@ -41,8 +41,8 @@ var PIXEL_RATIO = PixelRatio.get();
 
 var ToTheLeftIOS = {
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: -SCREEN_WIDTH * 0.3, y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: -SCREEN_WIDTH * 0.3, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -58,8 +58,8 @@ var ToTheLeftIOS = {
 var ToTheRightIOS = {
   ...ToTheLeftIOS,
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: SCREEN_WIDTH * 0.3, y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: SCREEN_WIDTH * 0.3, y: 0, z: 0 },
   },
 };
 
@@ -67,8 +67,8 @@ var FadeToTheLeft = {
   // Rotate *requires* you to break out each individual component of
   // rotation (x, y, z, w)
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: -Math.round(SCREEN_WIDTH * 0.3), y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: -Math.round(SCREEN_WIDTH * 0.3), y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -87,8 +87,8 @@ var FadeToTheLeft = {
   //   extrapolate: true
   // },
   transformScale: {
-    from: {x: 1, y: 1, z: 1},
-    to: {x: 0.95, y: 0.95, z: 1},
+    from: { x: 1, y: 1, z: 1 },
+    to: { x: 0.95, y: 0.95, z: 1 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -133,8 +133,8 @@ var FadeToTheLeft = {
 var FadeToTheRight = {
   ...FadeToTheLeft,
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: Math.round(SCREEN_WIDTH * 0.3), y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: Math.round(SCREEN_WIDTH * 0.3), y: 0, z: 0 },
   },
   translateX: {
     from: 0,
@@ -168,8 +168,8 @@ var FadeOut = {
 
 var ToTheLeft = {
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: -SCREEN_WIDTH, y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: -SCREEN_WIDTH, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -194,8 +194,8 @@ var ToTheLeft = {
 
 var ToTheRight = {
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: SCREEN_WIDTH, y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: SCREEN_WIDTH, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -220,8 +220,8 @@ var ToTheRight = {
 
 var ToTheUp = {
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: 0, y: -SCREEN_HEIGHT, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: 0, y: -SCREEN_HEIGHT, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -245,8 +245,8 @@ var ToTheUp = {
 
 var ToTheDown = {
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: 0, y: SCREEN_HEIGHT, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: 0, y: SCREEN_HEIGHT, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -275,8 +275,8 @@ var FromTheRight = {
   },
 
   transformTranslate: {
-    from: {x: SCREEN_WIDTH, y: 0, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { x: SCREEN_WIDTH, y: 0, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -307,8 +307,8 @@ var FromTheRight = {
 var FromTheLeft = {
   ...FromTheRight,
   transformTranslate: {
-    from: {x: -SCREEN_WIDTH, y: 0, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { x: -SCREEN_WIDTH, y: 0, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -329,8 +329,8 @@ var FromTheLeft = {
 var FromTheDown = {
   ...FromTheRight,
   transformTranslate: {
-    from: {y: SCREEN_HEIGHT, x: 0, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { y: SCREEN_HEIGHT, x: 0, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -351,8 +351,8 @@ var FromTheDown = {
 var FromTheTop = {
   ...FromTheRight,
   transformTranslate: {
-    from: {y: -SCREEN_HEIGHT, x: 0, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { y: -SCREEN_HEIGHT, x: 0, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -374,8 +374,8 @@ var ToTheBack = {
   // Rotate *requires* you to break out each individual component of
   // rotation (x, y, z, w)
   transformTranslate: {
-    from: {x: 0, y: 0, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { x: 0, y: 0, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -383,8 +383,8 @@ var ToTheBack = {
     round: PIXEL_RATIO,
   },
   transformScale: {
-    from: {x: 1, y: 1, z: 1},
-    to: {x: 0.95, y: 0.95, z: 1},
+    from: { x: 1, y: 1, z: 1 },
+    to: { x: 0.95, y: 0.95, z: 1 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -424,8 +424,8 @@ var FromTheFront = {
   },
 
   transformTranslate: {
-    from: {x: 0, y: SCREEN_HEIGHT, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { x: 0, y: SCREEN_HEIGHT, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -469,8 +469,8 @@ var FromTheFrontAndroid = {
     round: 100,
   },
   transformTranslate: {
-    from: {x: 0, y: 100, z: 0},
-    to: {x: 0, y: 0, z: 0},
+    from: { x: 0, y: 100, z: 0 },
+    to: { x: 0, y: 0, z: 0 },
     min: 0,
     max: 1,
     type: 'linear',
@@ -604,6 +604,14 @@ var NavigatorSceneConfigs = {
       out: buildStyleInterpolator(directionMapping.ToTheEndIOS),
     },
   },
+  PushToRight: {
+    ...BaseConfig,
+    animationInterpolators: {
+      into: buildStyleInterpolator(directionMapping.FromTheEnd),
+      out: buildStyleInterpolator(directionMapping.ToTheEndIOS),
+    },
+  },
+
   FloatFromRight: {
     ...BaseConfig,
     // We will want to customize this soon
