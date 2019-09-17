@@ -1,3 +1,4 @@
+import { Component } from 'react';
 
 interface ISceneConfigs {
     PushFromRight: object,
@@ -16,7 +17,7 @@ interface ISceneConfigs {
     VerticalDownSwipeJump: object,
 }
 
-declare class Navigator {
+declare class _Navigator extends Component<any> {
     static SceneConfigs: ISceneConfigs;
     getCurrentRoutes: () => [any];
     jumpBack: () => void;
@@ -34,5 +35,7 @@ declare class Navigator {
 }
 
 export default {
-    Navigator
+    Navigator: _Navigator
 }
+
+export const Navigator = _Navigator;
